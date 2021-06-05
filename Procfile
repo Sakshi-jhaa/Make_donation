@@ -1,1 +1,3 @@
-web: gunicorn DCC.wsgi --log-file -
+web: gunicorn DCC.wsgi:application --log-file - --log-level debug
+python manage.py collectstatic --noinput
+manage.py migrate
