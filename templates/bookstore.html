@@ -23,6 +23,26 @@
         <p>We don't ask a lot, just something that makes you happy because that something can change someone's life</p>
         </div>
     </section>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div class="print">
+        <h1>Already made donations</h1>
+            {% for donor in donors %}
+            <div class="don"></div>
+            <p>{{donor.Donor_name}} donated {{donor.Items}} and Rs.{{donor.cash}}</p>
+        </div>
+        {% endfor%}
+    </div>
     <style>
         body{
             font-family: Arial, Helvelica,sans-serif;

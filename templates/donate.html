@@ -66,6 +66,26 @@
             <br>
     </section>
 </section>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<div class="print">
+    <h1>Already made donations</h1>
+    <div class="don">
+        {% for donor in donors %}
+        <p>{{donor.Donor_name}}</p>
+        {% endfor %}
+    </div>
+</div>
 <style>
     body{
         font-family: Arial, Helvelica,sans-serif;
