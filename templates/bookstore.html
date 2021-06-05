@@ -38,7 +38,7 @@
     <div class="print">
         <h1>Already made donations</h1>
             {% for donor in donors %}
-            <div class="don"></div>
+            <div class="don">
             <p>{{donor.Donor_name}} donated {{donor.Items}} and Rs.{{donor.cash}}</p>
         </div>
         {% endfor%}
